@@ -20,7 +20,6 @@ A responsive **Foodpanda-inspired** food delivery website built using **HTML, CS
 ## 🌐 Live Demo
 
 🔗 [View Live Website](https://Mehtab2002.github.io/foodpanda-clone)  
-*(Replace with your actual GitHub Pages link)*
 
 ## 📷 Screenshots
 
