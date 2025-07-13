@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce Carting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <div class="image">
+                <img src="icon.svg" alt="" class="icon">
+                <img src="iconname.svg" alt="" class="iconname">
+            </div>
+
+
+        </div>
+        <div class="search">
+            <label for="search">Search</label>
+            <input type="text" id="search" placeholder="Search for products...">
+        </div>
+
+        <div class="icon-cart"></div>
+
+    </nav>
+    <div class="maincontainer">
+
+
+        <div class="container">
+
+            <div class="card">
+                <div class="cmain">
+                    <div class="details">
+                        <div class="name">
+                            <h3>Big Bite Roll</h3>
+                        </div>
+                        <div class="price">Rs. <span>387</span></div>
+                        <div class="description">Cooked marinate spicy chicken chunks with fresh cream</div>
+                    </div>
+                    <div class="images"><img
+                            src="https://images.deliveryhero.io/image/fd-pk/products/22703019.jpg?width=225&height=225"
+                            alt=""></div>
+                </div>
+                <div class="btn"><button onclick="add(this)">Add to Cart</button></div>
+            </div>
+            <!-- Card Ends Here -->
+
+            <div class="card">
+                <div class="cmain">
+                    <div class="details">
+                        <div class="name">
+                            <h3>Chicken Tikka Chest</h3>
+                        </div>
+                        <div class="price">Rs. <span>500</span></div>
+                        <div class="description">Fresh chicken, marinated in yogurt and spices</div>
+                    </div>
+                    <div class="images"><img
+                            src="https://images.deliveryhero.io/image/fd-pk/products/22703013.jpg?width=225&height=225"
+                            alt=""></div>
+                </div>
+                <div class="btn"><button onclick="add(this)">Add to Cart</button></div>
+            </div>
+            <!-- Card Ends Here -->
+            <div class="card">
+                <div class="cmain">
+                    <div class="details">
+                        <div class="name">
+                            <h3>Crispy Broast (Chest)</h3>
+                        </div>
+                        <div class="price">Rs. <span>585 </span></div>
+                        <div class="description">Crispy fried chicken covered up in a special hot sauce</div>
+                    </div>
+                    <div class="images"><img
+                            src="https://images.deliveryhero.io/image/fd-pk/products/22703015.jpg?width=225&height=225"
+                            alt=""></div>
+                </div>
+                <div class="btn"><button onclick="add(this)">Add to Cart</button></div>
+            </div>
+            <!-- Card Ends Here -->
+            <div class="card">
+                <div class="cmain">
+                    <div class="details">
+                        <div class="name">
+                            <h3>Chicken Tikka Pizza (Small)</h3>
+                        </div>
+                        <div class="price">Rs. <span>495 </span></div>
+                        <div class="description">Small Single Serving Smoked chicken, jalapenos and cheese.</div>
+                    </div>
+                    <div class="images"><img
+                            src="https://images.deliveryhero.io/image/fd-pk/products/22703016.jpg?width=225&height=225"
+                            alt=""></div>
+                </div>
+                <div class="btn"><button onclick="add(this)">Add to Cart</button></div>
+            </div>
+            <!-- Card Ends Here -->
+            <div class="card">
+                <div class="cmain">
+                    <div class="details">
+                        <div class="name">
+                            <h3>Chicken Qeema</h3>
+                        </div>
+                        <div class="price">Rs. <span>387 </span></div>
+                        <div class="description">Per plate / The queen of Pakistani cuisine</div>
+                    </div>
+                    <div class="images"><img
+                            src="https://images.deliveryhero.io/image/fd-pk/products/16627847.jpg?width=225&height=225"
+                            alt=""></div>
+                </div>
+                <div class="btn"><button onclick="add(this)">Add to Cart</button></div>
+            </div>
+            <!-- Card Ends Here -->
+            <div class="card">
+                <div class="cmain">
+                    <div class="details">
+                        <div class="name">
+                            <h3>Shashlik with Rice</h3>
+                        </div>
+                        <div class="price">Rs. <span>477 </span></div>
+                        <div class="description">A quick fried rice prepared with stir fried eggs, vegetables, meat,
+                            addition of sauces</div>
+                    </div>
+                    <div class="images"><img
+                            src="https://images.deliveryhero.io/image/fd-pk/products/16627850.jpg?width=128&height=128"
+                            alt=""></div>
+                </div>
+                <div class="btn"><button onclick="add(this)">Add to Cart</button></div>
+            </div>
+            <!-- Card Ends Here -->
+            <div class="card">
+                <div class="cmain">
+                    <div class="details">
+                        <div class="name">
+                            <h3>Chicken Achari Karahi</h3>
+                        </div>
+                        <div class="price">Rs. <span> 945</span> </div>
+                        <div class="description">Tender chicken breast pieces marinated in a mildly spiced curry sauce.
+                        </div>
+                    </div>
+                    <div class="images"><img
+                            src="https://images.deliveryhero.io/image/fd-pk/products/16627845.jpg?width=225&height=225"
+                            alt=""></div>
+                </div>
+                <div class="btn"><button onclick="add(this)">Add to Cart</button></div>
+            </div>
+            <!-- Card Ends Here -->
+            <div class="card">
+                <div class="cmain">
+                    <div class="details">
+                        <div class="name">
+                            <h3>Chicken Green Karahi</h3>
+                        </div>
+                        <div class="price">Rs. <span>945</span>  </div>
+                        <div class="description">Tender chicken breast pieces marinated in a mildly spiced curry sauce.
+                        </div>
+                    </div>
+                    <div class="images"><img
+                            src="https://images.deliveryhero.io/image/fd-pk/products/16627844.jpg?width=225&height=225"
+                            alt=""></div>
+                </div>
+                <div class="btn"><button onclick="add(this)">Add to Cart</button></div>
+            </div>
+            <!-- Card Ends Here -->
+            <div class="card">
+                <div class="cmain">
+                    <div class="details">
+                        <div class="name">
+                            <h3>Chicken Green Handi</h3>
+                        </div>
+                        <div class="price">Rs. <span>1125</span> </div>
+                        <div class="description">There's a reason why everyone loves it so much.</div>
+                    </div>
+                    <div class="images"><img
+                            src="https://images.deliveryhero.io/image/fd-pk/products/16627889.jpg?width=225&height=225"
+                            alt=""></div>
+                </div>
+                <div class="btn"><button onclick="add(this)">Add to Cart</button></div>
+            </div>
+            <!-- Card Ends Here -->
+                <div class="card">
+                <div class="cmain">
+                    <div class="details">
+                        <div class="name">
+                            <h3>Chicken Jalfrezi</h3>
+                        </div>
+                        <div class="price">Rs. <span>477</span> </div>
+                        <div class="description">For all your day to day chicken cravings.</div>
+                    </div>
+                    <div class="images"><img
+                            src="https://images.deliveryhero.io/image/fd-pk/Products/16627855.jpg?width=225&height=225"
+                            alt=""></div>
+                </div>
+                <div class="btn"><button onclick="add(this)">Add to Cart</button></div>
+            </div>
+            <!-- Card Ends Here -->
+             
+        </div>
+
+        <div class="cartcontainer">
+            <div>
+                <h1> Cart Details</h1>
+            </div>
+
+            <div class="cart">
+                <div class="heading">
+                    <h3>Your items</h3>
+                </div>
+                <div class="Items_Container">
+                    
+                </div>
+            </div>
+<div class="total">
+    <div><div>Total</div><div class="tax">(incl. fees and tax)</div></div> <div class="totalrs">Rs.<span>0</span></div>
+</div>
+<button class="submit" onclick="place_order()">Place Order</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>

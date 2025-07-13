@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+   body {
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.receipt {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(226, 27, 112, 0.2);
+  border: 2px solid rgba(226, 27, 112, 0.4);
+}
+
+.receipt h2 {
+  text-align: center;
+  color: rgb(255, 43, 133); /* PINK */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.datetime {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.receipt-table th {
+  background-color: rgb(255, 43, 133);
+  color: white;
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.receipt-table td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: #444;
+}
+
+.receipt-table tfoot td {
+  border-top: 2px solid rgb(255, 43, 133);
+  font-size: 16px;
+  color: rgb(255, 43, 133);
+  font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+    
+<div class="receipt">
+  <h2>Order Receipt</h2>
+  <p class="datetime">Date: <span id="date"></span> | Time: <span id="time"></span></p>
+  
+  <table class="receipt-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price (Rs)</th>
+      </tr>
+    </thead>
+    <tbody id="receipt-body">
+      <!-- Injected dynamically -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2"><strong>Total</strong></td>
+        <td><strong id="grand-total">0</strong></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+<button onclick="window.print()" style="margin: 20px auto; display: block; background: rgb(255, 43, 133); color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer;">Print Receipt</button>
+
+<script>
+
+  const now = new Date();
+document.getElementById("date").textContent = now.toLocaleDateString();
+document.getElementById("time").textContent = now.toLocaleTimeString();
+
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
+console.log(cart)
+let total = 0;
+const tbody = document.getElementById("receipt-body");
+
+cart.forEach(item => {
+  const row = document.createElement("tr");
+  row.innerHTML = `
+    <td>${item.name}</td>
+    <td>${item.quantity}</td>
+    <td>${item.price * item.quantity}</td>
+  `;
+  tbody.appendChild(row);
+  total += item.price * item.quantity;
+});
+
+document.getElementById("grand-total").textContent = total;
+
+
+</script>
+</body>
+</html>
