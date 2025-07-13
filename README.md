@@ -24,7 +24,7 @@ A responsive **Foodpanda-inspired** food delivery website built using **HTML, CS
 
 ## 📷 Screenshots
 
-![Food List](https://github.com/Mehtab2002/foodpanda-clone/blob/af468974b8f21f06206c867fed03867df4850b09/Screenshots/dashboard.png)
-![Bill Receipt](screenshots/bill.png)
+![Food List](https://github.com/Mehtab2002/foodpanda-clone/blob/bb4cced5e8fe6597e4161e995c25908980aceca6/Screenshots/dashboard.png)
+![Bill Receipt](https://github.com/Mehtab2002/foodpanda-clone/blob/bb4cced5e8fe6597e4161e995c25908980aceca6/Screenshots/bill.png)
 
 
