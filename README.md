@@ -27,5 +27,4 @@ A responsive **Foodpanda-inspired** food delivery website built using **HTML, CS
 ![Food List](screenshots/dashboard.png)
 ![Bill Receipt](screenshots/bill.png)
 
-## 📁 Folder Structure
 
